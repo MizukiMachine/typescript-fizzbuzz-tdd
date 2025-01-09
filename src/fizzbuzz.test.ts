@@ -38,4 +38,17 @@ describe('FizzBuzz', () => {
         expect(fizzbuzz(30)).toBe('FizzBuzz');
     });
   });
+  describe('error cases', () => {
+    test('throws ValidationError for zero', () => {
+        expect(() => fizzbuzz(0)).toThrow('Input must be positive');
+    });
+
+    test('throws ValidationError for negative numbers', () => {
+        expect(() => fizzbuzz(-1)).toThrow('Input must be positive');
+    });
+
+    test('throws ValidationError for decimal numbers', () => {
+        expect(() => fizzbuzz(1.5)).toThrow('Input must be an integer');
+    });
+  });
 });
