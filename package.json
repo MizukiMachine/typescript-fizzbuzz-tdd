@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage"
+    "build": "tsc",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci"
   },
   "keywords": [],
   "author": "",
