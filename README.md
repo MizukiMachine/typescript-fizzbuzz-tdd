@@ -1,4 +1,3 @@
-```markdown
 # TypeScript FizzBuzz TDD Example
 
 このリポジトリは、TypeScriptでFizzBuzzを実装しながらTDD(テスト駆動開発)を学ぶためのサンプルコードを提供します。
